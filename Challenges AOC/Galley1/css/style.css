@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #010101;
+}
+
+.container {
+  padding-left: 13%;
+  padding-right: 13%;
+  position: relative;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin: 70px auto;
+}
+
+.photo {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+
+.photo .caption {
+  color: #fff;
+  padding: 35px;
+  position: absolute;
+  bottom: 0;
+  top: 67%;
+  right: 0;
+  left: 0;
+}
+
+.photo .caption .caption-header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.photo .caption .caption-country {
+  font-family: "Poppins", sans-serif;
+  font-weight: 150;
+  font-style: normal;
+}
+
+.box {
+  transition: all 0.5s ease;
+  width: 150px;
+  height: 200px;
+  background: #000000;
+  position: absolute;
+  top: -5%;
+  right: 0;
+  bottom: 0;
+  left: 45%;
+  padding: 10px;
+  z-index: 9999;
+  color: #fff;
+}
+.box1 {
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.5),
+      rgba(12, 12, 12, 0.5)
+    ),
+    url("../images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 18%;
+  transition: all 0.5s;
+}
+
+.box .box-caption-header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  padding-top: 70%;
+  padding-bottom: 0px;
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+.box .box-caption-country {
+  font-family: "Poppins", sans-serif;
+  font-weight: 150;
+  font-style: normal;
+  z-index: 9999;
+}
+
+.box a {
+  color: rgb(10, 242, 238);
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1556px) {
+  .photo .caption .caption-header {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .photo .caption .caption-header {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1361px) {
+  .photo .caption .caption-header {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1283px) {
+  .photo .caption .caption-header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1166px) {
+  .photo .caption {
+    padding: 18px;
+  }
+  .box {
+    width: 130px;
+    height: 230;
+    top: -10%;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .photo .caption {
+    padding: 10px;
+  }
+  .photo .caption .caption-country {
+    font-size: 15px;
+  }
+  .box {
+    width: 110px;
+    height: 150px;
+    top: -10%;
+  }
+  .box .box-caption-header {
+    font-size: 14px;
+    padding-top: 60%;
+  }
+  .box .box-caption-country {
+    font-size: 12px;
+  }
+  .box a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .photo .caption {
+    padding: 10px;
+  }
+  .photo .caption .caption-header {
+    font-size: 18px;
+  }
+  .photo .caption .caption-country {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  .photo .caption {
+    padding: 10px;
+  }
+  .photo .caption .caption-header {
+    font-size: 16px;
+  }
+  .photo .caption .caption-country {
+    font-size: 11px;
+  }
+  .box {
+    width: 90px;
+    height: 128px;
+    top: -10%;
+  }
+  .box .box-caption-header {
+    font-size: 12px;
+    padding-top: 60%;
+  }
+  .box .box-caption-country {
+    font-size: 10px;
+  }
+  .box a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .photo .caption {
+    padding: 8px;
+  }
+  .photo .caption .caption-header {
+    font-size: 15px;
+  }
+  .photo .caption .caption-country {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .photo .caption {
+    padding: 8px;
+  }
+  .photo .caption .caption-header {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+  .photo .caption .caption-country {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .photo .caption {
+    padding: 8px;
+  }
+  .photo .caption .caption-header {
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+  .photo .caption .caption-country {
+    font-size: 8px;
+  }
+  .box {
+    width: 80px;
+    height: 120px;
+    top: -10%;
+  }
+  .box .box-caption-header {
+    font-size: 10px;
+    padding-top: 55%;
+  }
+  .box .box-caption-country {
+    font-size: 8px;
+  }
+  .box a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .photo .caption {
+    padding: 4px;
+  }
+  .photo .caption .caption-header {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  .photo .caption .caption-country {
+    font-size: 8px;
+  }
+  .box {
+    width: 50px;
+    height: 85px;
+    top: -10%;
+    padding: 2px;
+  }
+  .box .box-caption-header {
+    font-size: 8px;
+    padding-top: 55%;
+  }
+  .box .box-caption-country {
+    font-size: 6px;
+  }
+  .box a {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .photo .caption {
+    padding: 4px;
+  }
+  .photo .caption .caption-header {
+    font-size: 8px;
+    padding-bottom: 2px;
+    padding-top: -10px;
+  }
+  .photo .caption .caption-country {
+    font-size: 6px;
+  }
+}
